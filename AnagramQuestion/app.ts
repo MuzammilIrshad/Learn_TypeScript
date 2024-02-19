@@ -39,5 +39,5 @@ function isAnagram(str1: String, str2: String): boolean {
     return false;
   }
 }
-const result = isAnagram("he2loi", "ihelo2");
+const result = isAnagram("School MASTER", "The ClassROOM");
 console.log(result);

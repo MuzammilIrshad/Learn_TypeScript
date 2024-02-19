@@ -1,16 +1,17 @@
+"use strict";
 function isAnagram(str1, str2) {
     if (str1 === str2) {
         return false;
     }
     else {
-        var checkDuplicate = [];
+        let checkDuplicate = [];
         console.log(str1);
-        var updateStr1 = str1 === null || str1 === void 0 ? void 0 : str1.toLowerCase().split("");
-        var updateStr2 = str2 === null || str2 === void 0 ? void 0 : str2.toLowerCase().split("");
-        for (var i = 0; i <= updateStr1.length; i++) {
-            var char = updateStr1[i];
+        let updateStr1 = str1 === null || str1 === void 0 ? void 0 : str1.toLowerCase().split("");
+        let updateStr2 = str2 === null || str2 === void 0 ? void 0 : str2.toLowerCase().split("");
+        for (let i = 0; i <= updateStr1.length; i++) {
+            const char = updateStr1[i];
             console.log(char);
-            var str2Index = updateStr2.indexOf(char);
+            const str2Index = updateStr2.indexOf(char);
             if (str2Index !== -1) { // If character is found in str2
                 checkDuplicate.push(char);
                 console.log(checkDuplicate);
@@ -35,5 +36,5 @@ function isAnagram(str1, str2) {
         return false;
     }
 }
-var result = isAnagram("he2loi", "ihelo2");
+const result = isAnagram("School MASTER", "Th ClassROOM");
 console.log(result);
